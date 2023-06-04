@@ -60,7 +60,7 @@ do{
             break
         case 6:
             if (carrito>0){
-                let opCuotas=parseInt(prompt(`Ingrese la cantidad de cuotas: `))
+                let opCuotas=parseInt(prompt(`Ingrese la cantidad de cuotas, entre 1 y 12 pagos `))
                 while(opCuotas<=0 || opCuotas>12){
                     opCuotas=prompt(`
                     Error!!!
