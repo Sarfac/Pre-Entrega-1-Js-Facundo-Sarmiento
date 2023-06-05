@@ -10,6 +10,8 @@ function calcCuotas(cant,carro) {
 
 let opcion=0
 let carrito=0
+let opCuotas=0
+let cuotas=0
 
 
 alert("Bienvenido a - Primer pre entrega JS")
@@ -60,13 +62,13 @@ do{
             break
         case 6:
             if (carrito>0){
-                let opCuotas=parseInt(prompt(`Ingrese la cantidad de cuotas, entre 1 y 12 pagos `))
+                opCuotas=parseInt(prompt(`Ingrese la cantidad de cuotas, entre 1 y 12 pagos `))
                 while(opCuotas<=0 || opCuotas>12){
                     opCuotas=prompt(`
                     Error!!!
                     Ingrese un numero entre 1 y 12:`)
                 }
-                let cuotas=calcCuotas(opCuotas,carrito)
+                cuotas=calcCuotas(opCuotas,carrito)
                 alert(`El total de la compra es $ ${carrito} en ${opCuotas} pagos de $ ${cuotas}
                 Proximamente le enviaremos su factura
                 Gracias por su compra. `)
